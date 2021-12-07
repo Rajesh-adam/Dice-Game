@@ -1,11 +1,3 @@
-// console.log(dice)
-// document.querySelector('#current--' + activePlayer).textContent = dice;
-// var x = document.querySelector('#score--0').textContent;
-
-
-
-
-
 var scores, roundScore, activePlayer, gameStatus = true;
 initialize();
 
@@ -63,4 +55,9 @@ function nextPlayer() {
     document.querySelector('.player--' + 1).classList.toggle('player--active');
 
     document.querySelector('.dice').style.display = 'none';
+}
+
+function rules() {
+    alert('A dice game called pig game which follows following rules :\n1.If the player rolls a 1, they score nothing and it becomes the next player\'s turn.\n2.If the player rolls any other number, it is added to their turn total and the player\'s turn continues.\n3.If a player chooses to hold , their turn total is added to their score, and it becomes the next player\'s turn.')
+
 }
